@@ -1,7 +1,7 @@
-create procedure Update_marks @s_id int
+create procedure Update_marks @s_marks int
  As 
     Begin 
 	 Update Student
-	 set s_marks = 99
-	 where s_id = @s_id;
+	 set s_marks = @s_marks
+	 where s_id = 1
 	 End;
